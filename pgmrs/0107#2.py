@@ -7,3 +7,8 @@ def solution(x, n):
         xall += x
         answer.append(xall)
     return answer
+#level0 나머지 구하기
+def solution(num1, num2):
+    answer = num1 % num2
+    return answer
+
