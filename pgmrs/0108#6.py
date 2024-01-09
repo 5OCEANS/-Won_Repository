@@ -1,5 +1,4 @@
 #level1 2024 KAKAO WINTERINTERNSHIP 가장 많이 받은 선물
-
 def solution(friends, gifts):
     #return용
     answer = 0
@@ -58,7 +57,7 @@ def solution(friends, gifts):
                 if giftscore[i][2] > giftscore[j][2]:
                     #i가 j에게 선물을 하나 받는다. -> i의 점수 ++
                     result[i]+=1
-                #i
+                #i<j의 경우
                 elif giftscore[i][2] < giftscore[j][2]:
                     result[j]+=1
             #선물을 주고받은 기록이 있는 경우
