@@ -1,36 +1,27 @@
-deque=[]
-for i in com:
-    lenD = len(deque)
-    if i[0] =='push_front':
-        deque.insert(0, i[1])
-    elif i[0] == 'push_back':
-        deque.append(i[1])
-    elif i[0] == 'pop_front':
-        if lenD == 0:
-            print(-1)
-        else:
-            print(deque[0])
-            deque.pop(0)
-    elif i[0] == 'pop_back':
-        if lenD == 0:
-            print(-1)
-        else:
-            print(deque[-1])
-            deque.pop(-1)
-    elif i[0] == 'size':
-        print(lenD)
-    elif i[0] == 'empty':
-        if lenD == 0:
-            print(1)
-        else:
-            print(0)
-    elif i[0] == 'front':
-        if lenD == 0:
-            print(-1)
-        else:
-            print(deque[0])
-    elif i[0] == 'back':
-        if lenD == 0:
-            print(-1)
-        else:
-            print(deque[-1])
+import sys
+input = sys.stdin.readline
+deque = []
+n  = int(input())
+for i in range(n):
+    command = input().rstrip()
+    if " " in command :
+        a,b = command.split()
+        if a == 'push_front' : deque.insert(0,b)
+        elif a == 'push_back' : deque.append(b)
+    elif "pop_front" == command : 
+        if len(deque) == 0 : print(-1)
+        else : print(deque.pop(0))
+    elif "pop_back" == command : 
+        if len(deque) == 0 : print(-1)
+        else : print(deque.pop(-1))
+    
+    elif 'size' == command : print(len(deque))
+    elif 'empty' == command :
+        if len(deque) == 0 : print(1)
+        else : print(0)
+    elif 'front' == command :
+        if len(deque) == 0 : print(-1)
+        else : print(deque[0])
+    elif 'back' == command :
+        if len(deque) == 0 : print(-1)
+        else : print(deque[-1])

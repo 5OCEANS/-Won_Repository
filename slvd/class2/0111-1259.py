@@ -1,4 +1,4 @@
-
+#1259 팰린드롬수
 while True :
     st = list(input())
     if st == ['0']:
