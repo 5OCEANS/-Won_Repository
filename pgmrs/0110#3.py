@@ -44,6 +44,7 @@ def solution(N, stages):
             li.append(0)
         else:
             li.append(cnt/st)
+            
             st -= cnt
     result = []
     for i in range(N):
