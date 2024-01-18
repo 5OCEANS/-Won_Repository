@@ -5,7 +5,7 @@
 N,M =map(int, input().split())
 dic1 = {}
 dic2 = {}
-for i in range(0,N+1):
+for i in range(1,N+1):
     name = input()
     dic1[i] = name
     dic2[name] = i
