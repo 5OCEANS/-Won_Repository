@@ -1,18 +1,17 @@
 #15650 - N과 M(2)
 
-n,m = list(map(int,input().split()))
-lista = []
+N,M = map(int, input().split())
+s = []
 def dfs(start):
-    lenli = len(lista)
-    if lenli == m:
-        print(' '.join(map(str,lista)))
+    lenli = len(s)
+    if lenli == M:
+        print(''.join(map(str,s)))
         return
-    
-    for i in range(start,n+1):
-        if i not in lista:
-            lista.append(i)
-            #dfs를 시작점 갱신해서 실행
+    for i in range(start,N+1):
+        if i not in s:
+            s.append(i)
             dfs(i+1)
-            lista.pop()
+            s.pop()
+
 dfs(1)
  
