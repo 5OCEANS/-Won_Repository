@@ -6,7 +6,7 @@ dp = [[[0 for i in range(N)] for i in range(N)]for i in range(3)]
 dp[0][0][1] = 1
 
 for i in range(2,N):
-    if walls[i] == 0:
+    if walls[0][i] == 0:
         dp [0][0][i] = dp[0][0][i-1]
 
 for r in range(1, N):
