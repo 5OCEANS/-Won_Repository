@@ -8,4 +8,4 @@ for _ in range(n):
     X.append(x)
     Y.append(y)
 
-print((max(X) - min(X)) * (max(Y) - min(Y)))
+print((max(X) - min(X)) * (max(Y) - min(Y))) 
