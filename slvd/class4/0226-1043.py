@@ -49,24 +49,4 @@ def bfs(x):
 
 #bfs에 list넣기
                 
-bfs([x for x in range(1,len(tpeople)))]if tpeople)
-
-
-    
-
-
-
-    while(len(tpeople) != 0):
-        member = tpeople.pop()
-        for i in range(M):
-            if member in party[i]:
-                for mem in party[i]:
-                    li.append(mem)
-                    print(li)
-
-
-
-
-
-    print(p)
-    print(li)
+bfs([x for x in range(1,len(tpeople))])

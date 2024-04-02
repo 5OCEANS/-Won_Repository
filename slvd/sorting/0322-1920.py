@@ -18,7 +18,7 @@ def binary(target):
         if target < n_list[mid]:
             right = mid-1
         elif target > n_list[mid]:
-            left = mid + 1
+            left = mid + a1
 
 
 for i in range(m):
