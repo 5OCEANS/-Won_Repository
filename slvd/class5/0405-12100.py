@@ -24,8 +24,8 @@ def do(line):
                     break
         
         #처음이 0이 아닌 상태에서 시작20202
-        turn = 0
         
+
         
             
 
